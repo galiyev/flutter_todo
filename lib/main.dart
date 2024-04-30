@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:todo_app/gradient_container.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,35 +24,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter First App 1_',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.brown,
         appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: const Text('Aidana'),
+          backgroundColor: Colors.brown,
+          title: const Text('Auction', style: TextStyle(fontSize: 44, color: Colors.white),),
         ),
-        body: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(12),
-          child: const Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                'Flutter - The Complete Guide',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              Text(
-                'Learn Flutter step-by-step, from the ground up.',
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
+        body: const GradientContainer()
       ),
     );
   }
 }
+
+
