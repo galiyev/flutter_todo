@@ -2,11 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StyledText extends StatelessWidget {
-  const StyledText({super.key});
+  const StyledText(this.outputText, {super.key});
+
+  final String outputText;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Text('I Love Flutter!', style: TextStyle(color: Colors.white, fontSize: 44));
+    return Text(outputText, style: TextStyle(color: Colors.white, fontSize: 44));
   }
   
 }

@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.brown,
           title: const Text('Auction', style: TextStyle(fontSize: 44, color: Colors.white),),
         ),
-        body: const GradientContainer()
+        body: const GradientContainer(colors:[Colors.white10, Colors.amber])
       ),
     );
   }
